@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import { useStates, useFetch, useAutoKeys, useDebug } from 'react-easier';
 
 export default function App() {
@@ -14,9 +14,9 @@ export default function App() {
     <header>
       <h1>I am the header</h1>
       <nav>
-        <a href="/">Start page</a>&nbsp;
-        <a href="/about-us">About us</a>&nbsp;
-        <a href="/products">Our products</a>
+        <Link to="/">Start page</Link>&nbsp;
+        <Link to="/about-us">About us</Link>&nbsp;
+        <Link to="/products">Our products</Link>
       </nav>
     </header>
     <main>
