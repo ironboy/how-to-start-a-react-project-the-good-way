@@ -7,7 +7,7 @@ export default function App() {
   useAutoKeys(); // automatically sets keys for lists
 
   useStates('globals', {
-    products: useFetch('/products.json')
+    products: useFetch('/api/products')
   });
 
   return <>
